@@ -28,7 +28,7 @@ public class ImageUploader {
         } catch (IOException e) {
             //todo
         }
-        return "";
+        return uploadResult.get("url").toString();
     }
 }
 

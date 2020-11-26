@@ -10,7 +10,7 @@ import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import pl.bartekficek.springbootimageuploader.ImageUploader;
 
-@Route("uploadImage")
+@Route("upload")
 public class UploadGui extends VerticalLayout {
 
     private ImageUploader imageUploader;

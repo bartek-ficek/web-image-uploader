@@ -41,9 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin().permitAll()
                 .and()
-                .csrf().disable()
-                .headers().frameOptions().disable()
-                .and().headers().disable();
+                .csrf().disable();
     }
 
     @Bean

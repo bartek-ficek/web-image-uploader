@@ -24,7 +24,7 @@ public class UploadGui extends VerticalLayout {
         Button button = new Button("upload");
         button.addClickListener(clickEvent ->
         {
-            String uploadedImage = imageUploader.uploadFile(textField.getValue());
+            String uploadedImage = imageUploader.uploadFileAndSaveToDb(textField.getValue());
             Image image = new Image(uploadedImage, "Nie ma obrazka");
             label.setText("Upload zakonczony sukcesem!!");
             add(label);
